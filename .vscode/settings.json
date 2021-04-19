@@ -1,0 +1,19 @@
+{
+    // "git.enabled": true,
+    "files.exclude": {
+        "node_modules": true,
+        ".vscode": false,
+        ".gitignore": true,
+        "package.json": false,
+        "package-look.json": true,
+        "yarn.lock": true,
+        "public": true,
+        "readme.md": true,
+        ".expo": true,
+        ".expo-shared": true,
+        ".github": true,
+        "assets": true,
+        "tsconfig.json": true,
+        "babel.config.js": true,
+    }
+}

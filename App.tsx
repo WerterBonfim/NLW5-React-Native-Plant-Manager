@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, View, StyleSheet } from 'react-native'
+import colors from './colors';
 import { Welcome } from './src/pages/Welcome';
 
 export default function App() {
@@ -16,5 +17,6 @@ const style = StyleSheet.create({
     flex: 1,
     justifyContent: 'center', 
     alignItems: 'center'
+    
   }
 })

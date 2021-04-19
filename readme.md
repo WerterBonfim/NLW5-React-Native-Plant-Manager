@@ -7,6 +7,11 @@
   <a href="#-como-executar">Como Executar</a>
 </p>
 
+<p align="center">
+  <img alt="plant manager" src=".github/capa.png" width="100%">
+</p>
+
+
 ## Tecnologias
 
 - React Native

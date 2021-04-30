@@ -6,7 +6,7 @@ import colors from '../styles/colors';
 import { Welcome } from '../pages/Welcome';
 import { UserIdentification } from '../pages/UserIdentification';
 import { Confirmation } from '../pages/Confirmation';
-import { PlantSelect } from '../pages/PlantSelect';
+import { PlantSelect } from '../pages/PlantSelect/Index';
 
 const stackRoutes = createStackNavigator();
 

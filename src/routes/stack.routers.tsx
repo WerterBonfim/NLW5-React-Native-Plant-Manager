@@ -7,6 +7,8 @@ import { Welcome } from '../pages/Welcome';
 import { UserIdentification } from '../pages/UserIdentification';
 import { Confirmation } from '../pages/Confirmation';
 import { PlantSelect } from '../pages/PlantSelect/Index';
+import { PlantSave } from '../pages/PlantSave/Index';
+import { PagesEnum } from '../shared/constants';
 
 const stackRoutes = createStackNavigator();
 
@@ -26,18 +28,23 @@ const AppRoutes: React.FC = () => (
         />
 
         <stackRoutes.Screen
-            name="UserIndentification"
+            name={PagesEnum.UserIndentification}
             component={UserIdentification}
         />
 
         <stackRoutes.Screen
-            name="Confirmation"
+            name={PagesEnum.Confirmation}
             component={Confirmation}
         />
 
         <stackRoutes.Screen
-            name="PlantSelect"
-            component={PlantSelect} 
+            name={PagesEnum.PlantSelect}
+            component={PlantSelect}
+        />
+
+        <stackRoutes.Screen
+            name={PagesEnum.PlantSave}
+            component={PlantSave}
         />
 
     </stackRoutes.Navigator>

@@ -9,11 +9,16 @@ import {
     KeyboardAvoidingView,
     TouchableWithoutFeedback,
     Keyboard,
-    Platform
+    Platform,
+    Alert
 } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
+
 import { Button } from '../Components/Button';
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
+import { StorageEnum } from '../shared/constants'
 
 
 export function UserIdentification() {
@@ -24,7 +29,13 @@ export function UserIdentification() {
 
     const navigation = useNavigation();
 
-    function handlerConfirmation() {
+    async function handlerConfirmation() {
+
+        if (!name)
+            return Alert.alert('Me diz como posso chamar você 😢');
+
+        await AsyncStorage.setItem(StorageEnum.UserName, name);        
+
         navigation.navigate("Confirmation")
     }
 
